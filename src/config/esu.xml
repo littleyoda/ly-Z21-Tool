@@ -1,0 +1,2826 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lokdekoder id="151" name="ESU LokPilot V4.0">
+
+	<repeater start="1" stop="16" cvoffset="0" cverhoehung="16">
+		<config>
+			<!-- 257 CV A -->
+			<addr cv="257" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Lok fährt</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Lok steht</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Richtung ist Vorwärts</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Richtung ist Rückwarts</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F0 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F0 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F1 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="257" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F1 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		
+		<!-- 258 CV B-->
+		<config>
+			<addr cv="258" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F2 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F2 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F3 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F3 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F4 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F4 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F5 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="258" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F5 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		<!-- 259 CVC -->
+		<config>
+			<addr cv="259" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F6 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F6 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F7 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F7 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F8 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F8 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F9 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="259" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F9 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		<!-- 260 CV D -->
+		<config>
+			<addr cv="260" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F10 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F10 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F11 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F11 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F12 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F12 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F13 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="260" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F13 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		
+		
+		<!-- 261 CVE  -->
+		<config>
+			<addr cv="261" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F14 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F14 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F15 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F15 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F16 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F16 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F17 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="261" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F17 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+
+
+
+
+
+
+
+		<!-- 262 CVF  -->
+		<config>
+			<addr cv="262" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F18 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F18 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F19 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F19 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F20 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F20 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F21 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="262" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F21 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		
+		<!-- 263 CVG  -->
+		<config>
+			<addr cv="263" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: 22 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F22 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F23 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F23 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F24 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F24 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F25 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="263" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F25 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+
+		
+		<!-- 264 CV H  -->
+		<config>
+			<addr cv="264" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F26 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F26 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F27 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F27 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F28 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: F28 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Radsensor ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="264" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Radsensor ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+
+		
+		<!-- 265 CV I  -->
+		<config>
+			<addr cv="265" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 1 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 1 ist aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 2 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 2 aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 3 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 3 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 4 ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="265" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Sensor 4 ist Aus</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		<!-- 266 CV K  Phy. Funktionsausgänge -->
+		<config>
+			<addr cv="266" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang Licht vorne ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgnag Licht hinten ist An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX1 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX2 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX3 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX4 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX5 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="266" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX6 is An</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+		
+		<!-- 267 CV K  Phy. Funktionsausgänge -->
+		<config>
+			<addr cv="267" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang Aux7 ist an</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang Aux8 ist an</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang Aux9 ist an</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang Aux10 ist an</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="4" stopbit="4">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Lichte Vorne is An [Konf 2]</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Lichte Hinten is An [Konf 2]</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX1 is An[Konf 2]</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="267" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Ausgang AUX2 is An [Konf 2]</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+
+		
+		<!-- 268 CV M -->
+		<config>
+			<addr cv="268" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Anfahr-/Bremsverzögerung</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="268" startbit="1" stopbit="1">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Rangiergang</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="268" startbit="2" stopbit="2">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Dynamische Bremse</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="268" startbit="3" stopbit="3">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Kupplungswalzer</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<!-- bit 4 is reserved -->
+		<config>
+			<addr cv="268" startbit="5" stopbit="5">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Feuerbüchse</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="268" startbit="6" stopbit="6">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Dimmer</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<config>
+			<addr cv="268" startbit="7" stopbit="7">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Grade-Crossing</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		<!-- 269 komplet reserved -->
+		<config>
+			<addr cv="270" startbit="0" stopbit="0">
+				<setze cv="31" wert="16"/> 
+				<setze cv="32" wert="2"/> 
+			</addr>
+			<name>${idx}: Soundslot 1</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>nein</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>ja</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Mapping</kategorie>
+		</config>
+		
+	</repeater>
+
+	<config>
+		<addr cv="1"/>
+		<name>Lokadresse</name>
+		<beschreibung>Lokadresse</beschreibung>
+		<werte min="1" max="127"/>
+		<kategorie>Allg</kategorie>
+	</config>
+	<config>
+		<addr cv="2"/>
+		<name>Anfahrspannung</name>
+		<beschreibung>Mindestgeschwindigkeit</beschreibung>
+		<werte min="1" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="3"/>
+		<name>Beschleunigungszeit</name>
+		<beschreibung>Zeit von 0 bis Maximalgeschwindigkeit</beschreibung>
+		<werte min="0" max="255" faktor="0.25" einheit="sek" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="4"/>
+		<name>Bremszeit</name>
+		<beschreibung>Zeit von Maximalgeschwindigkeit bis 0</beschreibung>
+		<werte min="0" max="255" faktor="0.25" einheit="sek" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="5"/>
+		<name>Höchstgeschwindigkeit</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="6"/>
+		<name>Mittelgeschwindigkeit</name>
+		<beschreibung></beschreibung>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="7"/>
+		<name>Versionsnummer</name>
+		<beschreibung></beschreibung>
+		<kategorie>Decoder</kategorie>
+	</config>
+	<config>
+		<addr cv="8"/>
+		<name>Hersteller</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Decoder</kategorie>
+	</config>
+	<config>
+		<addr cv="10"/>
+		<name>Abtastrate der Lastregelung</name>
+		<beschreibung></beschreibung>
+		<werte min="4" max="8" faktor="1.02" einheit="ms" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<!-- 13, 14, 15,16 -->
+	<config>
+		<addr cv="17" length="2" startbit="0" stopbit="13"/>
+		<name>Lokadresse, lang</name>
+		<beschreibung>Lokadresse</beschreibung>
+		<werte min="128" max="99999"/>
+		<kategorie>DCC</kategorie>
+	</config>
+	<config>
+		<addr cv="19" />
+		<name>Verbundadresse</name>
+		<beschreibung>Verbundadresse</beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Mehrfachtraktion</kategorie>
+	</config>
+	<!--  21 wie 13
+	,22 wie 14 -->
+ 
+	<!-- CV 27 -->
+	<config>
+		<addr cv="27" startbit="0" stopbit="0" />
+		<name>ABC rechts</name>
+		<beschreibung>ABC Bremsen, wenn Spannung rechts größer</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+	<config>
+		<addr cv="27" startbit="1" stopbit="1" />
+		<name>ABC links</name>
+		<beschreibung>ABC Bremsen, wenn Spannung links größer</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+	<config>
+		<addr cv="27" startbit="2" stopbit="2" />
+		<name>ZIMO HLU</name>
+		<beschreibung>Bremsen wie ZIMO HLU</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+	<config>
+		<addr cv="27" startbit="3" stopbit="3" />
+		<name>Bracke on DC</name>
+		<beschreibung>Bremsen, wenn Polarität entgegengesetzt zur Fahrtrichtung</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+	<config>
+		<addr cv="27" startbit="4" stopbit="4" />
+		<name>Bracke on DC</name>
+		<beschreibung>Bremsen, wenn Polarität zur Fahrtrichtung passend</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+
+	<!-- CV 28 -->
+	<config>
+		<addr cv="28" startbit="0" stopbit="0" />
+		<name>RailCom Kanal 1</name>
+		<beschreibung>Freigabe für Adressbroadcast</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="28" startbit="1" stopbit="1" />
+		<name>RailCom Kanal 2</name>
+		<beschreibung>Datenübertragung auf Kanal 2</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="28" startbit="7" stopbit="7" />
+		<name>RailComPlus</name>
+		<beschreibung>Automatische Anmeldung</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+
+	<!-- CV 29 -->
+	<config>
+		<addr cv="29" startbit="0" stopbit="0" />
+		<name>Fahrtrichtung</name>
+		<beschreibung>Fahrtrichtung (DCC)</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>normal</name>
+				<beschreibung>normale Fahrrichtung</beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ungekehrt</name>
+				<beschreibung>Ungekehrte Fahrrichtung</beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="1" stopbit="1" />
+		<name>Fahrstufen</name>
+		<beschreibung>Anzahl an Fahrstufen (DCC)</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>14 Fahrstufen</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>28/128 Fahrstufen</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="2" stopbit="2" />
+		<name>Analogbetrieb</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>abgeschalten</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>mölglich</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Analog</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="3" stopbit="3" />
+		<name>RailCom</name>
+		<beschreibung>Schaltet RailCom ein oder aus</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>Aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>Ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="4" stopbit="4" />
+		<name>Motorkennlinie</name>
+		<beschreibung>Quelle für Motorkennlinie</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>CV 2, 5, 6</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>CV 67-94</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="5" stopbit="5" />
+		<name>Adresslänge</name>
+		<beschreibung>Kurze oder lange DCC Adressen</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>kurz</name>
+				<beschreibung>CV 1 wird genutzt</beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>lang</name>
+				<beschreibung>CV 17 und 18 werden genutzt</beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+
+	<!-- CV 47 -->
+	<config>
+		<addr cv="47" startbit="0" stopbit="0" />
+		<name>DCC Protokoll</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Protokolle</kategorie>
+	</config>
+	<config>
+		<addr cv="47" startbit="1" stopbit="1" />
+		<name>m4 Protokoll</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Protokolle</kategorie>
+	</config>
+	<config>
+		<addr cv="47" startbit="2" stopbit="2" />
+		<name>Motorola Protokoll</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Protokolle</kategorie>
+	</config>
+	<config>
+		<addr cv="47" startbit="3" stopbit="3" />
+		<name>Selectrix</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Protokolle</kategorie>
+	</config>
+	
+	
+	
+	
+	<!--- 49 -->
+		<config>
+			<addr cv="49" startbit="0" stopbit="0" />
+			<name>Lastregelung</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>Aus</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>Aktiv</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Motor</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="1" stopbit="1" />
+			<name>DC Motor PWM</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>20 kHz</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>40 kHz</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Motor</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="2" stopbit="2" />
+			<name>Märklin Delta Modus</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>Aus</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>Aktiv</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Misc</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="3" stopbit="3" />
+			<name>Märklin 2. Adresse</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>ausgeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>eingeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Misc</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="4" stopbit="4" />
+			<name>Automatische Fahrstufenerkennung DCC</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>Erkennung ausgeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>Erkennung eingeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>DCC</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="5" stopbit="5" />
+			<name>LGB Funktionstatsten Modus</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>abgeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>eingeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Protokolle</kategorie>
+		</config>
+		<config>
+			<addr cv="49" startbit="6" stopbit="6" />
+			<name>Zimo Manual Funktion</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="1">
+				<auswahl>
+					<wert>0</wert>
+					<name>abgeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+				<auswahl>
+					<wert>1</wert>
+					<name>eingeschaltet</name>
+					<beschreibung></beschreibung>
+				</auswahl>
+			</werte>
+			<kategorie>Protokolle</kategorie>
+		</config>
+
+	
+	<config>
+		<addr cv="50" startbit="0" stopbit="0" />
+		<name>AC Analog</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Analog</kategorie>
+	</config>
+	
+	
+	<config>
+		<addr cv="50" startbit="1" stopbit="1" />
+		<name>AC Analog</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Analog</kategorie>
+	</config>
+
+	<config>
+		<addr cv="51"/>
+		<name>Lastreglung I</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="52"/>
+		<name>Lastreglung K</name>
+		<beschreibung>für die Langsamfahrt</beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="53"/>
+		<name>Regelungsreferenz</name>
+		<beschreibung>für niedrige Fahrstufen</beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="54"/>
+		<name>Lastregelung K</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+
+	<config>
+		<addr cv="55"/>
+		<name>Lastregelung I</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	
+	<config>
+		<addr cv="56"/>
+		<name>Regeleinfluss I</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+
+	<config>
+		<addr cv="66"/>
+		<name>Vorwärts Trimm</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" faktor="0.0078125" einheit="" />
+		<kategorie>Motor</kategorie>
+	</config>
+
+	<!-- 67 - 94 Fahrstufen -->
+	<repeater start="1" stop="28" cvoffset="67" cverhoehung="1">
+		<config>
+			<addr cv="0"/>
+			<name>Geschwindigkeitstabelle ${idx}</name>
+			<beschreibung>CV: ${cv}</beschreibung>
+			<werte min="0" max="255"/>
+			<kategorie>Fahrstufen</kategorie>
+		</config>
+	</repeater>
+
+	<config>
+		<addr cv="95"/>
+		<name>Rückwärts Trimm</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" faktor="0.0078125" einheit="" />
+		<kategorie>Motor</kategorie>
+	</config>
+	
+	<!-- 105,106 User CV -->
+	<config>
+		<addr cv="112"/>
+		<name>Blickfrequenz</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" faktor="0.065536" einheit="sek" />
+		<kategorie>Motor</kategorie>
+	</config>
+
+	<config>
+		<addr cv="113"/>
+		<name>Power Fail Bypass</name>
+		<beschreibung>Zeit, die der PowerPack max. überbrücken soll</beschreibung>
+		<werte min="0" max="255" faktor="0.016384" einheit="sek" />
+		<kategorie>Decoder</kategorie>
+	</config>
+	
+	<config>
+		<addr cv="122" startbit="0" stopbit="0" />
+		<name>Funktionstasten speichern</name>
+		<beschreibung>Speicherung bei Stormunterbrechungen</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Misc</kategorie>
+	</config>
+	
+	<config>
+		<addr cv="122" startbit="1" stopbit="1" />
+		<name>Sollgeschwindigkeit speichern</name>
+		<beschreibung>Speicherung bei Stormunterbrechungen</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Decoder</kategorie>
+	</config>
+	
+		<!-- CV 123-->
+	<config>
+		<addr cv="123" />
+		<name>Geschwindigkeit bei ABC Langsamfahrabschnitten</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Zugbeeinflussung</kategorie>
+	</config>
+	
+	
+	
+	<!-- Railcom CV31=0 CV32=255 -->
+		<config>
+			<addr cv="257">
+				<setze cv="31" wert="0"/> 
+				<setze cv="32" wert="255"/> 
+			</addr>
+			<name>Hersteller ID</name>
+			<beschreibung></beschreibung>
+			<werte min="0" max="255" />
+			<kategorie>Railcom+</kategorie>
+		</config>
+		<config>
+			<addr cv="261" length="4" byteorder="little Endian">
+				<setze cv="31" wert="0"/> 
+				<setze cv="32" wert="255"/> 
+			</addr>
+			<format>hex</format>
+			<name>Produkt ID</name>
+			<beschreibung></beschreibung>
+			<kategorie>Railcom+</kategorie>
+		</config>
+		<config>
+			<addr cv="265" length="4" byteorder="little Endian">
+				<setze cv="31" wert="0"/> 
+				<setze cv="32" wert="255"/> 
+			</addr>
+			<format>hex</format>
+			<name>Seriennummer</name>
+			<beschreibung></beschreibung>
+			<kategorie>Railcom+</kategorie>
+		</config>
+		<config>
+			<addr cv="269" length="4" byteorder="little Endian">
+				<setze cv="31" wert="0"/> 
+				<setze cv="32" wert="255"/> 
+			</addr>
+			<format>sec01012000</format>
+			<name>Produktionsdatum</name>
+			<beschreibung></beschreibung>
+			<kategorie>Railcom+</kategorie>
+		</config>
+	
+</lokdekoder>

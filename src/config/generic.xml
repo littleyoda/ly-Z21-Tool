@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<lokdekoder id="-1" name="Generic">
+
+
+	<config>
+		<addr cv="1"/>
+		<name>Lokadresse</name>
+		<beschreibung>Lokadresse</beschreibung>
+		<werte min="1" max="127"/>
+		<kategorie>Allg</kategorie>
+	</config>
+	<config>
+		<addr cv="2"/>
+		<name>Anfahrspannung</name>
+		<beschreibung>Mindestgeschwindigkeit</beschreibung>
+		<werte min="1" max="255"/>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="3"/>
+		<name>Beschleunigungszeit</name>
+		<beschreibung>Zeit von 0 bis Maximalgeschwindigkeit</beschreibung>
+		<werte min="0" max="255"  />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="4"/>
+		<name>Bremszeit</name>
+		<beschreibung>Zeit von Maximalgeschwindigkeit bis 0</beschreibung>
+		<werte min="0" max="255" faktor="0.25" einheit="sek" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="5"/>
+		<name>Höchstgeschwindigkeit</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="6"/>
+		<name>Mittelgeschwindigkeit</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="7"/>
+		<name>Versionsnummer</name>
+		<beschreibung></beschreibung>
+		<kategorie>Decoder</kategorie>
+	</config>
+	<config>
+		<addr cv="8"/>
+		<name>Hersteller</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="255" />
+		<kategorie>Decoder</kategorie>
+	</config>
+	<!-- CV 28 -->
+	<config>
+		<addr cv="28" startbit="0" stopbit="0" />
+		<name>RailCom Kanal 1</name>
+		<beschreibung>Freigabe für Adressbroadcast</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="28" startbit="1" stopbit="1" />
+		<name>RailCom Kanal 2</name>
+		<beschreibung>Datenübertragung auf Kanal 2</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="28" startbit="7" stopbit="7" />
+		<name>RailComPlus</name>
+		<beschreibung>Automatische Anmeldung</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+
+	<!-- CV 29 -->
+	<config>
+		<addr cv="29" startbit="0" stopbit="0" />
+		<name>Fahrtrichtung</name>
+		<beschreibung>Fahrtrichtung (DCC)</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>normal</name>
+				<beschreibung>normale Fahrrichtung</beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>ungekehrt</name>
+				<beschreibung>Ungekehrte Fahrrichtung</beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="1" stopbit="1" />
+		<name>Fahrstufen</name>
+		<beschreibung>Anzahl an Fahrstufen (DCC)</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>14 Fahrstufen</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>28/128 Fahrstufen</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="2" stopbit="2" />
+		<name>Analogbetrieb</name>
+		<beschreibung></beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>abgeschalten</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>mölglich</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Analog</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="3" stopbit="3" />
+		<name>RailCom</name>
+		<beschreibung>Schaltet RailCom ein oder aus</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>Aus</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>Ein</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>RailCom</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="4" stopbit="4" />
+		<name>Motorkennlinie</name>
+		<beschreibung>Quelle für Motorkennlinie</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>CV 2, 5, 6</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>CV 66-95</name>
+				<beschreibung></beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>Motor</kategorie>
+	</config>
+	<config>
+		<addr cv="29" startbit="5" stopbit="5" />
+		<name>Adresslänge</name>
+		<beschreibung>Kurze oder lange DCC Adressen</beschreibung>
+		<werte min="0" max="1">
+			<auswahl>
+				<wert>0</wert>
+				<name>kurz</name>
+				<beschreibung>CV 1 wird genutzt</beschreibung>
+			</auswahl>
+			<auswahl>
+				<wert>1</wert>
+				<name>lang</name>
+				<beschreibung>CV 17 und 18 werden genutzt</beschreibung>
+			</auswahl>
+		</werte>
+		<kategorie>DCC</kategorie>
+	</config>
+
+</lokdekoder>

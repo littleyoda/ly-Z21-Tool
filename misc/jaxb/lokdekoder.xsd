@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+         <!-- XML Schema Generated from XML Document on Sun Jun 12 2016 13:38:10 GMT+0200 (CEST) -->
+         <!-- with XmlGrid.net Free Online Service http://xmlgrid.net -->
+         <xs:element name="lokdekoder">
+               <xs:complexType>
+                     <xs:sequence>
+                           <xs:element ref="config" maxOccurs="unbounded" />
+                        <xs:element name="repeater" maxOccurs="unbounded" >
+                                 <xs:complexType>
+                                       <xs:sequence>
+				                           <xs:element ref="config" maxOccurs="unbounded" />
+                                       </xs:sequence>
+                                       <xs:attribute name="start" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="stop" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="cvoffset" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="cverhoehung" type="xs:int"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                               
+                      
+                     <xs:attribute name="id" type="xs:int"></xs:attribute>
+                     <xs:attribute name="name" type="xs:string"></xs:attribute>
+               </xs:complexType>
+        	  </xs:element>
+                           <xs:element name="config">
+                                 <xs:complexType>
+                                       <xs:sequence>
+                                             <xs:element name="addr">
+                                                   <xs:complexType>
+                     <xs:sequence>
+                           <xs:element name="setze" maxOccurs="unbounded">
+                                 <xs:complexType>
+                                       <xs:attribute name="cv" type="xs:int"></xs:attribute>
+                                       <xs:attribute name="wert" type="xs:int"></xs:attribute>
+                                 </xs:complexType>
+                           </xs:element>
+                     </xs:sequence>
+                                                   		
+                                                         <xs:attribute name="cv" type="xs:int"></xs:attribute>
+                                                         <xs:attribute name="startbit" type="xs:int"></xs:attribute>
+                                                         <xs:attribute name="stopbit" type="xs:int"></xs:attribute>
+				                                       <xs:attribute name="length" type="xs:int"></xs:attribute>
+				                                       <xs:attribute name="byteorder" type="xs:string"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                             <xs:element name="format" type="xs:string"></xs:element>
+                                             <xs:element name="name" type="xs:string"></xs:element>
+                                             <xs:element name="beschreibung" type="xs:string"></xs:element>
+                                             <xs:element name="kategorie" type="xs:string"></xs:element>
+                                             <xs:element name="werte">
+                                                   <xs:complexType>
+                                                         <xs:sequence>
+                                                               <xs:element name="auswahl" maxOccurs="unbounded">
+                                                                     <xs:complexType>
+                                                                           <xs:sequence>
+                                                                                 <xs:element name="wert" type="xs:int"></xs:element>
+                                                                                 <xs:element name="name" type="xs:string"></xs:element>
+                                                                                 <xs:element name="beschreibung" type="xs:string"></xs:element>
+                                                                           </xs:sequence>
+                                                                     </xs:complexType>
+                                                               </xs:element>
+                                                         </xs:sequence>
+                                                         <xs:attribute name="min" type="xs:int"></xs:attribute>
+                                                         <xs:attribute
+                                                         name="einheit"
+                                                         type="xs:string"></xs:attribute>
+                                                         <xs:attribute
+                                                         name="faktor"
+                                                         type="xs:double"></xs:attribute>
+                                                         <xs:attribute name="max" type="xs:int"></xs:attribute>
+                                                   </xs:complexType>
+                                             </xs:element>
+                                       </xs:sequence>
+                                 </xs:complexType>
+                           </xs:element>
+   </xs:schema>
