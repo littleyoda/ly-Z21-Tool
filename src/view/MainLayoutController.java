@@ -25,8 +25,10 @@ import javafx.scene.control.Label;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.Spinner;
 import javafx.scene.control.SpinnerValueFactory;
+import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory;
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.control.TextFormatter;
 import javafx.scene.control.Toggle;
 import javafx.scene.control.ToggleGroup;
 import javafx.scene.paint.Color;
@@ -67,7 +69,7 @@ public class MainLayoutController {
 	@FXML
 	private Label lbStatus;
 
-	private Map<String, GridPaneTabController> tabs = new HashMap<String, GridPaneTabController>();
+	private Map<String, GridPaneTabController> tabs = new HashMap<>();
 
 	private Main mainApp;
 	private SimpleStringProperty vendorLabelString;
@@ -86,7 +88,14 @@ public class MainLayoutController {
 	private void initialize() {
 		ConfigFactory cf = ConfigFactory.instance;
 
-		lokSpinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 127, 1));
+		// see
+		// http://stackoverflow.com/questions/32340476/manually-typing-in-text-in-javafx-spinner-is-not-updating-the-value-unless-user
+		IntegerSpinnerValueFactory spinnerFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 127, 1);
+		lokSpinner.setValueFactory(spinnerFactory);
+		TextFormatter formatter = new TextFormatter(spinnerFactory.getConverter(), spinnerFactory.getValue());
+		lokSpinner.getEditor().setTextFormatter(formatter);
+		spinnerFactory.valueProperty().bindBidirectional(formatter.valueProperty());
+
 		lokSpinner.valueProperty().addListener((obs, oldValue, newValue) -> {
 			logger.info("Setting Lokid to " + newValue);
 			CVCache.instance.reset();
