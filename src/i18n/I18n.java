@@ -18,18 +18,13 @@ public class I18n {
 	static public ResourceBundle bundle = getBundle();
 
 	static public ResourceBundle getBundle() {
-		// Locale locale = new Locale("en", "US");
-		// return ResourceBundle.getBundle("i18n.Bundle", locale);
 		return ResourceBundle.getBundle("i18n.Bundle");
-		// , new Locale("de", "DE")
 	}
 
 	static public String getMsg(String key) {
-		if (!key.startsWith("%")) {
-			return key;
-		}
 		if (!bundle.containsKey(key)) {
 			logger.warning("I18N missing: " + key + " for " + Locale.getDefault());
+			return key;
 		}
 		return bundle.getString(key);
 	}
