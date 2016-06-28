@@ -7,7 +7,7 @@ import jaxbGenerated.config.Config.Addr.Setze;
 import tools.CVCache;
 import z21Drive.LocoAddressOutOfRangeException;
 import z21Drive.actions.Z21Action;
-import z21Drive.actions.Z21ActionLANXCVPomReadByte;
+import z21Drive.actions.Z21ActionLanXCVPomReadByte;
 import z21Drive.actions.Z21ActionLanXCVPomWriteByte;
 import z21Drive.broadcasts.Z21Broadcast;
 import z21Drive.responses.ResponseTypes;
@@ -18,12 +18,12 @@ public class Z21HandleIndirectCVPOM extends Z21HandleBase {
 
 	private ArrayList<Setze> setze;
 	private Integer cvaddr;
-	private List<Integer> results = new ArrayList<Integer>();
+	private List<Integer> results = new ArrayList<>();
 	private Integer lokid;
 
 	public Z21HandleIndirectCVPOM(List<Setze> setze, Integer lokid, Integer cvaddr, Z21Callback run) {
 		super(run);
-		this.setze = new ArrayList<Setze>(setze);
+		this.setze = new ArrayList<>(setze);
 		this.cvaddr = cvaddr;
 		this.lokid = lokid;
 	}
@@ -78,15 +78,12 @@ public class Z21HandleIndirectCVPOM extends Z21HandleBase {
 			}
 			System.out.println("Value Requested: " + setze.get(nextIdx).getCv());
 			return new Z21Action[] {
-						new Z21ActionLanXCVPomWriteByte(lokid, setze.get(nextIdx).getCv(), setze.get(nextIdx).getWert()),
-						new Z21ActionLANXCVPomReadByte(lokid, setze.get(nextIdx).getCv())
-				};
+					new Z21ActionLanXCVPomWriteByte(lokid, setze.get(nextIdx).getCv(), setze.get(nextIdx).getWert()),
+					new Z21ActionLanXCVPomReadByte(lokid, setze.get(nextIdx).getCv()) };
 		}
 		// 2. Request the CV
 		if (results.size() == setze.size()) {
-			return new Z21Action[] {
-					new Z21ActionLANXCVPomReadByte(lokid, cvaddr)
-			};
+			return new Z21Action[] { new Z21ActionLanXCVPomReadByte(lokid, cvaddr) };
 		}
 		return null;
 	}

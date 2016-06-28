@@ -2,7 +2,7 @@ package wrapper;
 
 import z21Drive.LocoAddressOutOfRangeException;
 import z21Drive.actions.Z21Action;
-import z21Drive.actions.Z21ActionLANXCVPomReadByte;
+import z21Drive.actions.Z21ActionLanXCVPomReadByte;
 
 public class Z21HandleCVPOM extends Z21HandleCVBase {
 
@@ -15,8 +15,7 @@ public class Z21HandleCVPOM extends Z21HandleCVBase {
 
 	@Override
 	public Z21Action getCVReadCommand(int cvaddr) throws LocoAddressOutOfRangeException {
-		return new Z21ActionLANXCVPomReadByte(lokid, cvaddr);
+		return new Z21ActionLanXCVPomReadByte(lokid, cvaddr);
 	}
-
 
 }

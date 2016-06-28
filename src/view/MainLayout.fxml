@@ -23,9 +23,9 @@
    <top>
       <MenuBar BorderPane.alignment="CENTER">
         <menus>
-          <Menu mnemonicParsing="false" text="Help">
+          <Menu mnemonicParsing="false" text="%main.menubar.help">
             <items>
-              <MenuItem mnemonicParsing="false" onAction="#helpPressed" text="About" />
+              <MenuItem mnemonicParsing="false" onAction="#helpPressed" text="%main.menubar.about" />
             </items>
           </Menu>
         </menus>

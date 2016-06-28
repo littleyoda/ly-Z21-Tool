@@ -9,7 +9,7 @@ import tools.ByteEvaluation;
 import tools.CVCache;
 import z21Drive.LocoAddressOutOfRangeException;
 import z21Drive.actions.Z21Action;
-import z21Drive.actions.Z21ActionLANXCVPomReadByte;
+import z21Drive.actions.Z21ActionLanXCVPomReadByte;
 import z21Drive.actions.Z21ActionLanXCVPomWriteByte;
 import z21Drive.actions.Z21ActionLanXCVRead;
 import z21Drive.actions.Z21ActionLanXCVWrite;
@@ -28,10 +28,10 @@ public class Z21HandleCV extends Z21HandleBase {
 	private int length;
 
 	// Used while ReadingCV
-	private List<Integer> results = new ArrayList<Integer>();
+	private List<Integer> results = new ArrayList<>();
 
 	// Used while SettingIndexBytes
-	private List<Integer> currentCV = new ArrayList<Integer>();
+	private List<Integer> currentCV = new ArrayList<>();
 
 	// IndexBytes
 	private List<Setze> setze;
@@ -77,7 +77,7 @@ public class Z21HandleCV extends Z21HandleBase {
 
 	public Z21Action getCVReadCommand(int cvaddr) throws LocoAddressOutOfRangeException {
 		if (pom) {
-			return new Z21ActionLANXCVPomReadByte(lokid, cvaddr);
+			return new Z21ActionLanXCVPomReadByte(lokid, cvaddr);
 		} else {
 			return new Z21ActionLanXCVRead(cvaddr);
 		}
@@ -179,20 +179,10 @@ public class Z21HandleCV extends Z21HandleBase {
 
 	private Z21Action[] getCVWriteCommandWithResult(int nextCV, int nextWert) throws LocoAddressOutOfRangeException {
 		if (pom) {
-			return new Z21Action[] { new Z21ActionLanXCVPomWriteByte(lokid, nextCV, nextWert), // Write
-																								// on
-																								// POM
-																								// does
-																								// not
-																								// send
-																								// a
-																								// response.
-																								// ...
-					new Z21ActionLANXCVPomReadByte(lokid, nextCV) }; // ... so a
-																		// Read
-																		// Command
-																		// is
-																		// necessary
+			// Writing on POM does not send a Response ...
+			return new Z21Action[] { new Z21ActionLanXCVPomWriteByte(lokid, nextCV, nextWert),
+					// ... so a Read Command is necessary
+					new Z21ActionLanXCVPomReadByte(lokid, nextCV) };
 		} else {
 			return new Z21Action[] { new Z21ActionLanXCVWrite(nextCV, nextWert) };
 
