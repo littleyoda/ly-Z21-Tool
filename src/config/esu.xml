@@ -8,7 +8,7 @@
 				<setze cv="31" wert="16"/> 
 				<setze cv="32" wert="2"/> 
 			</addr>
-			<name>${idx}: Lok fährt</name>
+			<name>%cfg.locodrives</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -29,7 +29,7 @@
 				<setze cv="31" wert="16"/> 
 				<setze cv="32" wert="2"/> 
 			</addr>
-			<name>${idx}: Lok steht</name>
+			<name>%cfg.locostops</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -50,7 +50,7 @@
 				<setze cv="31" wert="16"/> 
 				<setze cv="32" wert="2"/> 
 			</addr>
-			<name>${idx}: Richtung ist Vorwärts</name>
+			<name>%cfg.directionforward</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -71,7 +71,7 @@
 				<setze cv="31" wert="16"/> 
 				<setze cv="32" wert="2"/> 
 			</addr>
-			<name>${idx}: Richtung ist Rückwarts</name>
+			<name>%cfg.directionbackward</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2063,54 +2063,54 @@
 
 	<config>
 		<addr cv="1"/>
-		<name>Lokadresse</name>
-		<beschreibung>Lokadresse</beschreibung>
+		<name>%cfg.locoaddr</name>
+		<beschreibung>%cfg.locoaddr</beschreibung>
 		<werte min="1" max="127"/>
 		<kategorie>Allg</kategorie>
 	</config>
 	<config>
 		<addr cv="2"/>
-		<name>Anfahrspannung</name>
-		<beschreibung>Mindestgeschwindigkeit</beschreibung>
+		<name>%cfg.startvoltage</name>
+		<beschreibung>%cfg.minimumspeed</beschreibung>
 		<werte min="1" max="255"/>
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="3"/>
-		<name>Beschleunigungszeit</name>
-		<beschreibung>Zeit von 0 bis Maximalgeschwindigkeit</beschreibung>
+		<name>%cfg.acceleration</name>
+		<beschreibung>%cfg.time0toMax</beschreibung>
 		<werte min="0" max="255" faktor="0.25" einheit="sek" />
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="4"/>
-		<name>Bremszeit</name>
-		<beschreibung>Zeit von Maximalgeschwindigkeit bis 0</beschreibung>
+		<name>%cfg.deceleration</name>
+		<beschreibung>%cfg.timeMaxTo0</beschreibung>
 		<werte min="0" max="255" faktor="0.25" einheit="sek" />
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="5"/>
-		<name>Höchstgeschwindigkeit</name>
+		<name>%cfg.maximumspeed</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" />
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="6"/>
-		<name>Mittelgeschwindigkeit</name>
+		<name>%cfg.mediumspeed</name>
 		<beschreibung></beschreibung>
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="7"/>
-		<name>Versionsnummer</name>
+		<name>%cfg.versionnumber</name>
 		<beschreibung></beschreibung>
 		<kategorie>Decoder</kategorie>
 	</config>
 	<config>
 		<addr cv="8"/>
-		<name>Hersteller</name>
+		<name>%cfg.manufacturerid</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" />
 		<kategorie>Decoder</kategorie>
@@ -2125,15 +2125,15 @@
 	<!-- 13, 14, 15,16 -->
 	<config>
 		<addr cv="17" length="2" startbit="0" stopbit="13"/>
-		<name>Lokadresse, lang</name>
-		<beschreibung>Lokadresse</beschreibung>
+		<name>%cfg.extlocoaddr</name>
+		<beschreibung></beschreibung>
 		<werte min="128" max="99999"/>
 		<kategorie>DCC</kategorie>
 	</config>
 	<config>
 		<addr cv="19" />
-		<name>Verbundadresse</name>
-		<beschreibung>Verbundadresse</beschreibung>
+		<name>%cfg.consistaddress</name>
+		<beschreibung>%cfg.consistaddress</beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Mehrfachtraktion</kategorie>
 	</config>
@@ -2143,7 +2143,7 @@
 	<!-- CV 27 -->
 	<config>
 		<addr cv="27" startbit="0" stopbit="0" />
-		<name>ABC rechts</name>
+		<name>%cfg.abcbrakingricht</name>
 		<beschreibung>ABC Bremsen, wenn Spannung rechts größer</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2161,7 +2161,7 @@
 	</config>
 	<config>
 		<addr cv="27" startbit="1" stopbit="1" />
-		<name>ABC links</name>
+		<name>%cfg.abcbrakingleft</name>
 		<beschreibung>ABC Bremsen, wenn Spannung links größer</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2179,7 +2179,7 @@
 	</config>
 	<config>
 		<addr cv="27" startbit="2" stopbit="2" />
-		<name>ZIMO HLU</name>
+		<name>%cfg.zimohlubrakes</name>
 		<beschreibung>Bremsen wie ZIMO HLU</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2197,7 +2197,7 @@
 	</config>
 	<config>
 		<addr cv="27" startbit="3" stopbit="3" />
-		<name>Bracke on DC</name>
+		<name>%cfg.brackeDC</name>
 		<beschreibung>Bremsen, wenn Polarität entgegengesetzt zur Fahrtrichtung</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2215,7 +2215,7 @@
 	</config>
 	<config>
 		<addr cv="27" startbit="4" stopbit="4" />
-		<name>Bracke on DC</name>
+		<name>%cfg.brackeDC</name>
 		<beschreibung>Bremsen, wenn Polarität zur Fahrtrichtung passend</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2235,7 +2235,7 @@
 	<!-- CV 28 -->
 	<config>
 		<addr cv="28" startbit="0" stopbit="0" />
-		<name>RailCom Kanal 1</name>
+		<name>%cfg.railcomChannel1</name>
 		<beschreibung>Freigabe für Adressbroadcast</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2253,7 +2253,7 @@
 	</config>
 	<config>
 		<addr cv="28" startbit="1" stopbit="1" />
-		<name>RailCom Kanal 2</name>
+		<name>%cfg.railcomChannel2</name>
 		<beschreibung>Datenübertragung auf Kanal 2</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2272,7 +2272,7 @@
 	<config>
 		<addr cv="28" startbit="7" stopbit="7" />
 		<name>RailComPlus</name>
-		<beschreibung>Automatische Anmeldung</beschreibung>
+		<beschreibung>%cfg.automaticregconition</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
 				<wert>0</wert>
@@ -2291,7 +2291,7 @@
 	<!-- CV 29 -->
 	<config>
 		<addr cv="29" startbit="0" stopbit="0" />
-		<name>Fahrtrichtung</name>
+		<name>%cfg.traveldirection</name>
 		<beschreibung>Fahrtrichtung (DCC)</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2309,8 +2309,8 @@
 	</config>
 	<config>
 		<addr cv="29" startbit="1" stopbit="1" />
-		<name>Fahrstufen</name>
-		<beschreibung>Anzahl an Fahrstufen (DCC)</beschreibung>
+		<name>%cfg.speedsteps</name>
+		<beschreibung>%cfg.numberofspeedstepsddc</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
 				<wert>0</wert>
@@ -2327,7 +2327,7 @@
 	</config>
 	<config>
 		<addr cv="29" startbit="2" stopbit="2" />
-		<name>Analogbetrieb</name>
+		<name>%cfg.analogueoperation</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2346,7 +2346,7 @@
 	<config>
 		<addr cv="29" startbit="3" stopbit="3" />
 		<name>RailCom</name>
-		<beschreibung>Schaltet RailCom ein oder aus</beschreibung>
+		<beschreibung>%cfg.railcomDisOrEnnable</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
 				<wert>0</wert>
@@ -2363,8 +2363,8 @@
 	</config>
 	<config>
 		<addr cv="29" startbit="4" stopbit="4" />
-		<name>Motorkennlinie</name>
-		<beschreibung>Quelle für Motorkennlinie</beschreibung>
+		<name>%cfg.enginespeedcurve</name>
+		<beschreibung>%cfg.sourcespeedcurve</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
 				<wert>0</wert>
@@ -2381,8 +2381,8 @@
 	</config>
 	<config>
 		<addr cv="29" startbit="5" stopbit="5" />
-		<name>Adresslänge</name>
-		<beschreibung>Kurze oder lange DCC Adressen</beschreibung>
+		<name>%cfg.addresslength</name>
+		<beschreibung>%cfg.shortOrlongddcaddresses</beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
 				<wert>0</wert>
@@ -2478,7 +2478,7 @@
 	<!--- 49 -->
 		<config>
 			<addr cv="49" startbit="0" stopbit="0" />
-			<name>Lastregelung</name>
+			<name>%cfg.loadcontrol</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2496,7 +2496,7 @@
 		</config>
 		<config>
 			<addr cv="49" startbit="1" stopbit="1" />
-			<name>DC Motor PWM</name>
+			<name>%cfg.dcmotorpwm</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2532,7 +2532,7 @@
 		</config>
 		<config>
 			<addr cv="49" startbit="3" stopbit="3" />
-			<name>Märklin 2. Adresse</name>
+			<name>%cfg.maerklinSecondAdress</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2550,7 +2550,7 @@
 		</config>
 		<config>
 			<addr cv="49" startbit="4" stopbit="4" />
-			<name>Automatische Fahrstufenerkennung DCC</name>
+			<name>%cfg.autoddcspeeddetection</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2568,7 +2568,7 @@
 		</config>
 		<config>
 			<addr cv="49" startbit="5" stopbit="5" />
-			<name>LGB Funktionstatsten Modus</name>
+			<name>%cfg.lgbfunctionbuttonmode</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2586,7 +2586,7 @@
 		</config>
 		<config>
 			<addr cv="49" startbit="6" stopbit="6" />
-			<name>Zimo Manual Funktion</name>
+			<name>%cfg.zimomanualfunction</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="1">
 				<auswahl>
@@ -2606,7 +2606,7 @@
 	
 	<config>
 		<addr cv="50" startbit="0" stopbit="0" />
-		<name>AC Analog</name>
+		<name>%cfg.acanaloguemode</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2626,7 +2626,7 @@
 	
 	<config>
 		<addr cv="50" startbit="1" stopbit="1" />
-		<name>AC Analog</name>
+		<name>%cfg.dcanaloguemode</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="1">
 			<auswahl>
@@ -2645,28 +2645,28 @@
 
 	<config>
 		<addr cv="51"/>
-		<name>Lastreglung I</name>
+		<name>%cfg.loadcontrolparameterIlow</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="52"/>
-		<name>Lastreglung K</name>
-		<beschreibung>für die Langsamfahrt</beschreibung>
+		<name>%cfg.loadcontrolparameterK</name>
+		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="53"/>
-		<name>Regelungsreferenz</name>
+		<name>%cfg.controlreferencevoltage</name>
 		<beschreibung>für niedrige Fahrstufen</beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
 	</config>
 	<config>
 		<addr cv="54"/>
-		<name>Lastregelung K</name>
+		<name>%cfg.loadcontrolparameterK</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
@@ -2674,7 +2674,7 @@
 
 	<config>
 		<addr cv="55"/>
-		<name>Lastregelung I</name>
+		<name>%cfg.loadcontrolparameterI</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
@@ -2682,7 +2682,7 @@
 	
 	<config>
 		<addr cv="56"/>
-		<name>Regeleinfluss I</name>
+		<name>%cfg.rangeofloadcontrol</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
 		<kategorie>Motor</kategorie>
@@ -2690,7 +2690,7 @@
 
 	<config>
 		<addr cv="66"/>
-		<name>Vorwärts Trimm</name>
+		<name>%cfg.forwardtrimm</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.0078125" einheit="" />
 		<kategorie>Motor</kategorie>
@@ -2700,7 +2700,7 @@
 	<repeater start="1" stop="28" cvoffset="67" cverhoehung="1">
 		<config>
 			<addr cv="0"/>
-			<name>Geschwindigkeitstabelle ${idx}</name>
+			<name>%cfg.speedtable</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="255"/>
 			<kategorie>Fahrstufen</kategorie>
@@ -2709,7 +2709,7 @@
 
 	<config>
 		<addr cv="95"/>
-		<name>Rückwärts Trimm</name>
+		<name>%cfg.reversetrimm</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.0078125" einheit="" />
 		<kategorie>Motor</kategorie>
@@ -2718,7 +2718,7 @@
 	<!-- 105,106 User CV -->
 	<config>
 		<addr cv="112"/>
-		<name>Blickfrequenz</name>
+		<name>%cfg.flashrate</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.065536" einheit="sek" />
 		<kategorie>Motor</kategorie>
@@ -2726,7 +2726,7 @@
 
 	<config>
 		<addr cv="113"/>
-		<name>Power Fail Bypass</name>
+		<name>%cfg.pwoerfailbypass</name>
 		<beschreibung>Zeit, die der PowerPack max. überbrücken soll</beschreibung>
 		<werte min="0" max="255" faktor="0.016384" einheit="sek" />
 		<kategorie>Decoder</kategorie>
@@ -2787,7 +2787,7 @@
 				<setze cv="31" wert="0"/> 
 				<setze cv="32" wert="255"/> 
 			</addr>
-			<name>Hersteller ID</name>
+			<name>%cfg.manufacturer</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="255" />
 			<kategorie>Railcom+</kategorie>
@@ -2798,7 +2798,7 @@
 				<setze cv="32" wert="255"/> 
 			</addr>
 			<format>hex</format>
-			<name>Produkt ID</name>
+			<name>%cfg.productid</name>
 			<beschreibung></beschreibung>
 			<kategorie>Railcom+</kategorie>
 		</config>
@@ -2818,7 +2818,7 @@
 				<setze cv="32" wert="255"/> 
 			</addr>
 			<format>sec01012000</format>
-			<name>Produktionsdatum</name>
+			<name>%cfg.productiondate</name>
 			<beschreibung></beschreibung>
 			<kategorie>Railcom+</kategorie>
 		</config>

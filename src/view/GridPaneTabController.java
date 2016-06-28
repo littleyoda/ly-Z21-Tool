@@ -2,7 +2,6 @@ package view;
 
 import java.util.ArrayList;
 
-import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.collections.transformation.FilteredList;
@@ -14,7 +13,6 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import jaxbGenerated.config.Config;
-import z21Drive.LocoAddressOutOfRangeException;
 
 public class GridPaneTabController {
 
@@ -31,26 +29,23 @@ public class GridPaneTabController {
 
 	private FilteredList<Config> filteredData;
 
-	public void addRow(Config config) {
-		data.add(config);
+	public void addRow(Config Config) {
+		data.add(Config);
 
 	}
 
 	public void setTab(Tab tab) {
 		TableColumn<Config, String> firstNameCol = new TableColumn<Config, String>("Name");
 		firstNameCol.setMinWidth(100);
-		firstNameCol.setCellValueFactory(
-				new PropertyValueFactory<Config, String>("name"));
+		firstNameCol.setCellValueFactory(new PropertyValueFactory<Config, String>("name"));
 
 		TableColumn<Config, String> lastNameCol = new TableColumn<Config, String>("Zustand");
 		lastNameCol.setMinWidth(100);
-		lastNameCol.setCellValueFactory(
-				new PropertyValueFactory<Config, String>("valueastext"));
+		lastNameCol.setCellValueFactory(new PropertyValueFactory<Config, String>("valueastext"));
 
 		TableColumn<Config, String> emailCol = new TableColumn<Config, String>("Beschreibung");
 		emailCol.setMinWidth(200);
-		emailCol.setCellValueFactory(
-				new PropertyValueFactory<Config, String>("beschreibung"));
+		emailCol.setCellValueFactory(new PropertyValueFactory<Config, String>("beschreibung"));
 
 		table.getColumns().clear();
 		table.getColumns().addAll(firstNameCol, lastNameCol, emailCol);
@@ -62,7 +57,8 @@ public class GridPaneTabController {
 					return true;
 				}
 
-				String cmp = (config.getBeschreibung() + " " + config.getName() + " " + config.getValueastext()).toLowerCase();
+				String cmp = (config.getBeschreibung() + " " + config.getName() + " "
+						+ config.valueastextProperty().get()).toLowerCase();
 				return cmp.contains(newValue.toLowerCase());
 			});
 		});
@@ -79,7 +75,5 @@ public class GridPaneTabController {
 	public void setMainController(MainLayoutController mainLayoutController) {
 		this.mainLayoutController = mainLayoutController;
 	}
-
-
 
 }
