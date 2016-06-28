@@ -22,6 +22,9 @@ public class I18n {
 	}
 
 	static public String getMsg(String key) {
+		if (key.isEmpty()) {
+			return key;
+		}
 		if (!bundle.containsKey(key)) {
 			logger.warning("I18N missing: " + key + " for " + Locale.getDefault());
 			return key;

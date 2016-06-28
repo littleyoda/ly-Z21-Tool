@@ -186,7 +186,6 @@ public class MainLayoutController {
 		tabs.clear();
 		// Cache reset
 		for (Config x : lokdekoder.getConfig()) {
-			i18n.I18n.translate(x);
 			String kat = (x.getKategorie() == null) ? "Nicht zugeordnet" : x.getKategorie();
 			GridPaneTabController controller = tabs.get(kat);
 			if (controller == null) {
