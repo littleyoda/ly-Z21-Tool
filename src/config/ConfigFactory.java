@@ -89,9 +89,16 @@ public class ConfigFactory {
 	 * @param daten
 	 */
 	private static void translate(Lokdekoder daten) {
-		for (Config config : daten.getConfig()) {
-			i18n.I18n.translate(config);
+		translate(daten.getConfig());
+		for (Repeater rep : daten.getRepeater()) {
+			translate(rep.getConfig());
 		}
+	}
+
+	private static void translate(List<Config> config) {
+		config
+			.parallelStream()
+			.forEach((c) -> { i18n.I18n.translate(c);});
 	}
 
 	private static void handleRepeaters(Lokdekoder daten) {
