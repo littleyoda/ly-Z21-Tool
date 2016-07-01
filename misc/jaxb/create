@@ -1,1 +1,2 @@
-xjc -p jaxbGenerated.config -d src -b lokdekoderBinding.xml lokdekoder.xsd 
+#!/bin/bash
+xjc -p jaxbGenerated.config -d ../../src -b lokdekoderBinding.xml lokdekoder.xsd 
