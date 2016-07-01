@@ -203,9 +203,8 @@ public class MainLayoutController {
 				tab.setClosable(false);
 				controller = loader.getController();
 				controller.setMainController(this);
-				controller.setTab(tab);
+				controller.init(tab, kat);
 				tabs.put(kat, controller);
-				tab.setText(kat);
 				tabpane.getTabs().add(tab);
 			}
 			controller.addRow(x);
@@ -230,9 +229,9 @@ public class MainLayoutController {
 		try {
 			dialog = (DialogPane) loader.load();
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		((HelpViewController) loader.getController()).setText();
 		Dialog d = new Dialog();
 		ButtonType buttonTypeOk = new ButtonType("Okay", ButtonData.OK_DONE);
 		d.setDialogPane(dialog);
@@ -288,9 +287,7 @@ public class MainLayoutController {
 
 	public void update(List<Config> data) {
 		for (Config c : data) {
-			if (c.valueastextProperty().get().equals("?")) {
-				request(c);
-			}
+			request(c);
 		}
 	}
 

@@ -2,7 +2,7 @@
 // Diese Datei wurde mit der JavaTM Architecture for XML Binding(JAXB) Reference Implementation, v2.2.8-b130911.1802 generiert 
 // Siehe <a href="http://java.sun.com/xml/jaxb">http://java.sun.com/xml/jaxb</a> 
 // Änderungen an dieser Datei gehen bei einer Neukompilierung des Quellschemas verloren. 
-// Generiert: 2016.06.26 um 09:33:43 PM CEST 
+// Generiert: 2016.06.30 um 08:16:07 PM CEST 
 //
 
 
@@ -11,6 +11,7 @@ package jaxbGenerated.config;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlAttribute;
@@ -58,6 +59,7 @@ import javax.xml.bind.annotation.XmlType;
  *         &lt;element name="name" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="beschreibung" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="kategorie" type="{http://www.w3.org/2001/XMLSchema}string"/>
+ *         &lt;element name="subkategorie" type="{http://www.w3.org/2001/XMLSchema}string"/>
  *         &lt;element name="werte">
  *           &lt;complexType>
  *             &lt;complexContent>
@@ -100,6 +102,7 @@ import javax.xml.bind.annotation.XmlType;
     "name",
     "beschreibung",
     "kategorie",
+    "subkategorie",
     "werte"
 })
 @XmlRootElement(name = "config")
@@ -118,6 +121,8 @@ public class Config extends ConfigBase
     protected String beschreibung;
     @XmlElement(required = true)
     protected String kategorie;
+    @XmlElement(required = true)
+    protected String subkategorie;
     @XmlElement(required = true)
     protected Config.Werte werte;
 
@@ -242,6 +247,30 @@ public class Config extends ConfigBase
     }
 
     /**
+     * Ruft den Wert der subkategorie-Eigenschaft ab.
+     * 
+     * @return
+     *     possible object is
+     *     {@link String }
+     *     
+     */
+    public String getSubkategorie() {
+        return subkategorie;
+    }
+
+    /**
+     * Legt den Wert der subkategorie-Eigenschaft fest.
+     * 
+     * @param value
+     *     allowed object is
+     *     {@link String }
+     *     
+     */
+    public void setSubkategorie(String value) {
+        this.subkategorie = value;
+    }
+
+    /**
      * Ruft den Wert der werte-Eigenschaft ab.
      * 
      * @return
@@ -345,7 +374,7 @@ public class Config extends ConfigBase
          */
         public List<Config.Addr.Setze> getSetze() {
             if (setze == null) {
-                setze = new ArrayList<Config.Addr.Setze>();
+                setze = new ArrayList<>();
             }
             return this.setze;
         }
@@ -633,7 +662,7 @@ public class Config extends ConfigBase
          */
         public List<Config.Werte.Auswahl> getAuswahl() {
             if (auswahl == null) {
-                auswahl = new ArrayList<Config.Werte.Auswahl>();
+                auswahl = new ArrayList<>();
             }
             return this.auswahl;
         }

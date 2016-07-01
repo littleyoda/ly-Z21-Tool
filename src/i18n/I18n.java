@@ -4,8 +4,10 @@ import java.text.MessageFormat;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.util.HashSet;
 import java.util.Locale;
 import java.util.ResourceBundle;
+import java.util.Set;
 import java.util.logging.Logger;
 
 import jaxbGenerated.config.Config;
@@ -16,6 +18,8 @@ public class I18n {
 	static private Logger logger = Logger.getLogger(I18n.class.getSimpleName());
 
 	static public ResourceBundle bundle = getBundle();
+	
+	static public Set<String> missing = new HashSet<>();
 
 	static public ResourceBundle getBundle() {
 		return ResourceBundle.getBundle("i18n.Bundle");
@@ -26,7 +30,10 @@ public class I18n {
 			return key;
 		}
 		if (!bundle.containsKey(key)) {
-			logger.warning("I18N missing: " + key + " for " + Locale.getDefault());
+			if (!missing.contains(key)) {
+				logger.warning("I18N missing: " + key + " for " + Locale.getDefault());
+			} 
+			missing.add(key);
 			return key;
 		}
 		return bundle.getString(key);

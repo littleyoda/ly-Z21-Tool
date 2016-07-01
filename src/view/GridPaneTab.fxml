@@ -5,8 +5,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
-<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeTableView?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.ColumnConstraints?>
 <?import javafx.scene.layout.GridPane?>
@@ -17,13 +17,6 @@
 <Tab text="Untitled Tab">
          <content>
             <BorderPane prefHeight="200.0" prefWidth="200.0">
-               <center>
-                  <TableView fx:id="table" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="527.0" prefWidth="632.0" BorderPane.alignment="CENTER">
-                     <columnResizePolicy>
-                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
-                     </columnResizePolicy>
-                  </TableView>
-               </center>
                <top>
                   <GridPane BorderPane.alignment="CENTER">
                      <columnConstraints>
@@ -45,6 +38,12 @@
                      </children>
                   </GridPane>
                </top>
+               <center>
+                  <TreeTableView fx:id="table" prefHeight="200.0" prefWidth="200.0" tableMenuButtonVisible="true" BorderPane.alignment="CENTER">
+                     <columnResizePolicy>
+                        <TreeTableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy></TreeTableView>
+               </center>
             </BorderPane>
          </content>
 </Tab>

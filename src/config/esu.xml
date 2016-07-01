@@ -13,12 +13,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -34,12 +34,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -55,12 +55,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -76,12 +76,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -97,12 +97,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -118,12 +118,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -139,12 +139,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -160,12 +160,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -184,12 +184,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -205,12 +205,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -226,12 +226,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -247,12 +247,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -268,12 +268,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -289,12 +289,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -310,12 +310,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -331,12 +331,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -354,12 +354,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -375,12 +375,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -396,12 +396,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -417,12 +417,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -438,12 +438,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -459,12 +459,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -480,12 +480,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -501,12 +501,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -524,12 +524,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -545,12 +545,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -566,12 +566,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -587,12 +587,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -608,12 +608,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -629,12 +629,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -650,12 +650,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -671,12 +671,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -696,12 +696,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -717,12 +717,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -738,12 +738,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -759,12 +759,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -780,12 +780,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -801,12 +801,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -822,12 +822,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -843,12 +843,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -872,12 +872,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -893,12 +893,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -914,12 +914,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -935,12 +935,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -956,12 +956,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -977,12 +977,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -998,12 +998,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1019,12 +1019,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1043,12 +1043,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1064,12 +1064,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1085,12 +1085,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1106,12 +1106,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1127,12 +1127,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1148,12 +1148,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1169,12 +1169,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1190,12 +1190,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1214,12 +1214,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1235,12 +1235,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1256,12 +1256,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1277,12 +1277,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1298,12 +1298,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1319,12 +1319,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1340,12 +1340,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1361,12 +1361,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1385,12 +1385,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1406,12 +1406,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1427,12 +1427,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1448,12 +1448,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1469,12 +1469,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1490,12 +1490,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1511,12 +1511,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1532,12 +1532,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1555,12 +1555,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1576,12 +1576,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1597,12 +1597,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1618,12 +1618,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1639,12 +1639,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1660,12 +1660,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1681,12 +1681,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1702,12 +1702,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1726,12 +1726,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1747,12 +1747,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1768,12 +1768,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1789,12 +1789,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1810,12 +1810,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1831,12 +1831,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1852,12 +1852,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1873,12 +1873,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1898,12 +1898,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1919,12 +1919,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1940,12 +1940,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1961,12 +1961,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -1983,12 +1983,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -2004,12 +2004,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -2025,12 +2025,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -2047,12 +2047,12 @@
 			<werte min="0" max="1">
 				<auswahl>
 					<wert>0</wert>
-					<name>nein</name>
+					<name>%cfg.no</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 				<auswahl>
 					<wert>1</wert>
-					<name>ja</name>
+					<name>%cfg.yes</name>
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
@@ -2073,34 +2073,37 @@
 		<name>%cfg.startvoltage</name>
 		<beschreibung>%cfg.minimumspeed</beschreibung>
 		<werte min="1" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
+		<subkategorie>CV 2,5,6</subkategorie>
 	</config>
 	<config>
 		<addr cv="3"/>
 		<name>%cfg.acceleration</name>
 		<beschreibung>%cfg.time0toMax</beschreibung>
 		<werte min="0" max="255" faktor="0.25" einheit="sek" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="4"/>
 		<name>%cfg.deceleration</name>
 		<beschreibung>%cfg.timeMaxTo0</beschreibung>
 		<werte min="0" max="255" faktor="0.25" einheit="sek" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="5"/>
 		<name>%cfg.maximumspeed</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
+		<subkategorie>CV 2,5,6</subkategorie>
 	</config>
 	<config>
 		<addr cv="6"/>
 		<name>%cfg.mediumspeed</name>
 		<beschreibung></beschreibung>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
+		<subkategorie>CV 2,5,6</subkategorie>
 	</config>
 	<config>
 		<addr cv="7"/>
@@ -2120,7 +2123,7 @@
 		<name>Abtastrate der Lastregelung</name>
 		<beschreibung></beschreibung>
 		<werte min="4" max="8" faktor="1.02" einheit="ms" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<!-- 13, 14, 15,16 -->
 	<config>
@@ -2128,7 +2131,8 @@
 		<name>%cfg.extlocoaddr</name>
 		<beschreibung></beschreibung>
 		<werte min="128" max="99999"/>
-		<kategorie>DCC</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>DCC</subkategorie>
 	</config>
 	<config>
 		<addr cv="19" />
@@ -2249,7 +2253,8 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>RailCom</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>RailCom</subkategorie>
 	</config>
 	<config>
 		<addr cv="28" startbit="1" stopbit="1" />
@@ -2267,7 +2272,8 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>RailCom</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>RailCom</subkategorie>
 	</config>
 	<config>
 		<addr cv="28" startbit="7" stopbit="7" />
@@ -2285,7 +2291,8 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>RailCom</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>RailCom</subkategorie>
 	</config>
 
 	<!-- CV 29 -->
@@ -2305,7 +2312,8 @@
 				<beschreibung>Ungekehrte Fahrrichtung</beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>DCC</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>DCC</subkategorie>
 	</config>
 	<config>
 		<addr cv="29" startbit="1" stopbit="1" />
@@ -2323,7 +2331,8 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>DCC</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>DCC</subkategorie>
 	</config>
 	<config>
 		<addr cv="29" startbit="2" stopbit="2" />
@@ -2359,7 +2368,8 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>RailCom</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>RailCom</subkategorie>
 	</config>
 	<config>
 		<addr cv="29" startbit="4" stopbit="4" />
@@ -2377,7 +2387,7 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="29" startbit="5" stopbit="5" />
@@ -2395,7 +2405,8 @@
 				<beschreibung>CV 17 und 18 werden genutzt</beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>DCC</kategorie>
+		<kategorie>Protokolle</kategorie>
+		<subkategorie>DCC</subkategorie>
 	</config>
 
 	<!-- CV 47 -->
@@ -2416,6 +2427,7 @@
 			</auswahl>
 		</werte>
 		<kategorie>Protokolle</kategorie>
+		<subkategorie>DCC</subkategorie>
 	</config>
 	<config>
 		<addr cv="47" startbit="1" stopbit="1" />
@@ -2434,6 +2446,7 @@
 			</auswahl>
 		</werte>
 		<kategorie>Protokolle</kategorie>
+		<subkategorie>m4</subkategorie>
 	</config>
 	<config>
 		<addr cv="47" startbit="2" stopbit="2" />
@@ -2452,6 +2465,7 @@
 			</auswahl>
 		</werte>
 		<kategorie>Protokolle</kategorie>
+		<subkategorie>Motorola</subkategorie>
 	</config>
 	<config>
 		<addr cv="47" startbit="3" stopbit="3" />
@@ -2470,6 +2484,7 @@
 			</auswahl>
 		</werte>
 		<kategorie>Protokolle</kategorie>
+		<subkategorie>Selectrix</subkategorie>
 	</config>
 	
 	
@@ -2492,7 +2507,7 @@
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
-			<kategorie>Motor</kategorie>
+			<kategorie>%cfg.engine</kategorie>
 		</config>
 		<config>
 			<addr cv="49" startbit="1" stopbit="1" />
@@ -2510,7 +2525,7 @@
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
-			<kategorie>Motor</kategorie>
+			<kategorie>%cfg.engine</kategorie>
 		</config>
 		<config>
 			<addr cv="49" startbit="2" stopbit="2" />
@@ -2528,7 +2543,8 @@
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
-			<kategorie>Misc</kategorie>
+			<kategorie>Protokolle</kategorie>
+			<subkategorie>Märklin</subkategorie>
 		</config>
 		<config>
 			<addr cv="49" startbit="3" stopbit="3" />
@@ -2546,7 +2562,8 @@
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
-			<kategorie>Misc</kategorie>
+			<kategorie>Protokolle</kategorie>
+			<subkategorie>Märklin</subkategorie>
 		</config>
 		<config>
 			<addr cv="49" startbit="4" stopbit="4" />
@@ -2564,7 +2581,8 @@
 					<beschreibung></beschreibung>
 				</auswahl>
 			</werte>
-			<kategorie>DCC</kategorie>
+			<kategorie>Protokolle</kategorie>
+			<subkategorie>DCC</subkategorie>
 		</config>
 		<config>
 			<addr cv="49" startbit="5" stopbit="5" />
@@ -2648,28 +2666,28 @@
 		<name>%cfg.loadcontrolparameterIlow</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="52"/>
 		<name>%cfg.loadcontrolparameterK</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="53"/>
 		<name>%cfg.controlreferencevoltage</name>
 		<beschreibung>für niedrige Fahrstufen</beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	<config>
 		<addr cv="54"/>
 		<name>%cfg.loadcontrolparameterK</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 
 	<config>
@@ -2677,7 +2695,7 @@
 		<name>%cfg.loadcontrolparameterI</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	
 	<config>
@@ -2685,7 +2703,7 @@
 		<name>%cfg.rangeofloadcontrol</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255"/>
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 
 	<config>
@@ -2693,7 +2711,7 @@
 		<name>%cfg.forwardtrimm</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.0078125" einheit="" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 
 	<!-- 67 - 94 Fahrstufen -->
@@ -2703,7 +2721,8 @@
 			<name>%cfg.speedtable</name>
 			<beschreibung>CV: ${cv}</beschreibung>
 			<werte min="0" max="255"/>
-			<kategorie>Fahrstufen</kategorie>
+			<kategorie>%cfg.engine</kategorie>
+			<subkategorie>Fahrstufen</subkategorie>
 		</config>
 	</repeater>
 
@@ -2712,7 +2731,7 @@
 		<name>%cfg.reversetrimm</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.0078125" einheit="" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 	
 	<!-- 105,106 User CV -->
@@ -2721,7 +2740,7 @@
 		<name>%cfg.flashrate</name>
 		<beschreibung></beschreibung>
 		<werte min="0" max="255" faktor="0.065536" einheit="sek" />
-		<kategorie>Motor</kategorie>
+		<kategorie>%cfg.engine</kategorie>
 	</config>
 
 	<config>
@@ -2748,7 +2767,7 @@
 				<beschreibung></beschreibung>
 			</auswahl>
 		</werte>
-		<kategorie>Misc</kategorie>
+		<kategorie>Decoder</kategorie>
 	</config>
 	
 	<config>
@@ -2790,7 +2809,7 @@
 			<name>%cfg.manufacturer</name>
 			<beschreibung></beschreibung>
 			<werte min="0" max="255" />
-			<kategorie>Railcom+</kategorie>
+			<kategorie>Decoder</kategorie>
 		</config>
 		<config>
 			<addr cv="261" length="4" byteorder="little Endian">
@@ -2800,7 +2819,7 @@
 			<format>hex</format>
 			<name>%cfg.productid</name>
 			<beschreibung></beschreibung>
-			<kategorie>Railcom+</kategorie>
+			<kategorie>Decoder</kategorie>
 		</config>
 		<config>
 			<addr cv="265" length="4" byteorder="little Endian">
@@ -2810,7 +2829,7 @@
 			<format>hex</format>
 			<name>Seriennummer</name>
 			<beschreibung></beschreibung>
-			<kategorie>Railcom+</kategorie>
+			<kategorie>Decoder</kategorie>
 		</config>
 		<config>
 			<addr cv="269" length="4" byteorder="little Endian">
@@ -2820,7 +2839,7 @@
 			<format>sec01012000</format>
 			<name>%cfg.productiondate</name>
 			<beschreibung></beschreibung>
-			<kategorie>Railcom+</kategorie>
+			<kategorie>Decoder</kategorie>
 		</config>
 	
 </lokdekoder>

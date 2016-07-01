@@ -49,6 +49,7 @@
                                              <xs:element name="name" type="xs:string"></xs:element>
                                              <xs:element name="beschreibung" type="xs:string"></xs:element>
                                              <xs:element name="kategorie" type="xs:string"></xs:element>
+                                             <xs:element name="subkategorie" type="xs:string"></xs:element>
                                              <xs:element name="werte">
                                                    <xs:complexType>
                                                          <xs:sequence>
