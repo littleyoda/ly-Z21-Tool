@@ -7,6 +7,7 @@ import java.util.logging.LogRecord;
 import java.util.logging.Logger;
 import java.util.logging.StreamHandler;
 
+import config.ConfigFactory;
 import i18n.I18n;
 import javafx.application.Application;
 import javafx.application.Platform;
@@ -27,6 +28,8 @@ public class Main extends Application {
 	public void start(Stage primaryStage) {
 		try {
 			Platform.setImplicitExit(true);
+			logger.info("Loading Configs");
+			ConfigFactory c = ConfigFactory.instance;
 			logger.info("Starting Z21");
 			Z21 z = Z21.instance;
 			logger.info("Starting MainLayout");
