@@ -31,7 +31,7 @@ public class Main extends Application {
 			Z21 z = Z21.instance;
 			logger.info("Starting MainLayout");
 			FXMLLoader loader = new FXMLLoader();
-			loader.setLocation(Main.class.getResource("/view/MainLayout.fxml"));
+			loader.setLocation(Main.class.getClassLoader().getResource("view/MainLayout.fxml"));
 			loader.setResources(I18n.getBundle());
 			BorderPane mainLayout = (BorderPane) loader.load();
 			controller = loader.getController();

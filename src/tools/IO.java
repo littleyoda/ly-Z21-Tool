@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URI;
 import java.net.URISyntaxException;
+import java.net.URL;
 import java.nio.file.FileSystem;
 import java.nio.file.FileSystems;
 import java.nio.file.Files;
@@ -11,10 +12,13 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Logger;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class IO {
+
+	
+	private static Logger logger = Logger.getLogger(IO.class.getSimpleName());
 
 
 	/**
@@ -26,8 +30,8 @@ public class IO {
 	 */
 	public static List<String> getFiles(String path) {
 	    try {
-			URI uri = IO.class.getResource(path).toURI();
-		    String absPath = IO.class.getResource("..").getPath();
+			URI uri = getResource(path).toURI();
+		    String absPath = getResource("..").getPath();
 			Path myPath;
 			if (uri.getScheme().equals("jar")) {
 			    FileSystem fileSystem = FileSystems.newFileSystem(uri, Collections.<String, Object>emptyMap());
@@ -62,6 +66,17 @@ public class IO {
 	
 	public static InputStream getIS(Path path) {
 		return getIS(path.toString());
+	}
+
+	public static URL getResource(String string) {
+		URL out = IO.class.getResource(string);
+		if (out == null) {
+			if (string.startsWith("/")) {
+				out = IO.class.getClassLoader().getResource(string.substring(1));
+			}
+		}
+		logger.info("getResource " + string + " => " + out);
+		return out;
 	}
 
 }

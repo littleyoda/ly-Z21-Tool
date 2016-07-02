@@ -7,7 +7,6 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.function.Consumer;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -46,18 +45,26 @@ public class ConfigFactory {
 				String[] splited = line.split(";");
 				hersteller.put(splited[1].trim(), splited[0].trim());
 			}
-			IO.getFiles("/config").forEach(new Consumer<String>() {
-
-				@Override
-				public void accept(String p) {
-					if (p.toLowerCase().endsWith(".xml")) {
-						configs.add(getConfig(p));
-					}
-
-				}
-
-			});
-			System.out.println("FInish");
+			
+			BufferedReader br = new BufferedReader(new InputStreamReader(IO.getIS("/config/configlist.csv")));
+			br.lines().forEach( p -> {
+				System.out.println(p);
+			if (p.toLowerCase().endsWith(".xml")) {
+				configs.add(getConfig("/config/" + p));
+			}} );
+			
+//			IO.getFiles("/config/").forEach(new Consumer<String>() {
+//
+//				@Override
+//				public void accept(String p) {
+//					if (p.toLowerCase().endsWith(".xml")) {
+//						configs.add(getConfig(p));
+//					}
+//
+//				}
+//
+//			});
+//			System.out.println("FInish");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
